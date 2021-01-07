@@ -19,8 +19,8 @@
     urlpath: http://localhost:18080/convertigo/xsd/couchdb/CouchDb.xsd
   ↓lib_FullSyncGrp_reference [references.ProjectSchemaReference]: 
     projectName: lib_FullSyncGrp=https://github.com/convertigo/c8oprj-lib-fullsync-grp.git:branch=7.9.0:autoPull=true
-  ↓mobilebuilder_tpl_7_8_0_reference [references.ProjectSchemaReference]: 
-    projectName: mobilebuilder_tpl_7_8_0=https://github.com/convertigo/c8oprj-mobilebuilder-tpl.git:branch=mobilebuilder_tpl_7_8_0:autoPull=true
+  ↓Project_reference [references.ProjectSchemaReference]: 
+    projectName: mobilebuilder_tpl_7_9_0=https://github.com/convertigo/c8oprj-mobilebuilder-tpl/archive/mobilebuilder_tpl_7_9_0.zip
   ↓MobileApplication [core.MobileApplication]: 
     applicationDescription: Flying Club flight sharing application
     applicationId: com.convertigo.flightshare
