@@ -181,23 +181,6 @@ title: Mes vols
                           - MobileSmartSourceType: source:{"filter":"Database","project":"FlightShare","input":"listen(['fs:\/\/flightshare_fullsync.view#MODIFYFLIGHT, {ddoc='Design_document', view='Flights'}'])?.rows[0]?.doc?.flight?.plane"}
                     ↓PushPage [ngx.components.UIDynamicAction-1643801102692]: 
                       beanData: '{"ionBean":"PushPageAction","page":"plain:FlightShare.MobileApplication.Application.AddOrModifyFlight"}'
-  ↓FabContainer1 [ngx.components.UIDynamicElement-1643792241601]: 
-    beanData: |
-      '{
-       "ionBean": "FabContainer",
-       "Horizontal": "plain:start",
-       "Vertical": "plain:bottom"
-      }'
-    tagName: ion-fab
-    ↓FabButton1 [ngx.components.UIDynamicElement-1643792241616]: 
-      beanData: '{"ionBean":"FabButton"}'
-      tagName: ion-fab-button
-      ↓Icon [ngx.components.UIDynamicElement-1643792241619]: 
-        beanData: '{"ionBean":"Icon","IconName":"plain:share-social"}'
-        tagName: ion-icon
-      ↓Event [ngx.components.UIControlEvent-1643792241622]: 
-        ↓PushPage [ngx.components.UIDynamicAction-1643792241625]: 
-          beanData: '{"ionBean":"PushPageAction","page":"plain:FlightShare.MobileApplication.Application.SharedFlights"}'
   ↓FabContainer [ngx.components.UIDynamicElement-1508947025708]: 
     beanData: |
       '{

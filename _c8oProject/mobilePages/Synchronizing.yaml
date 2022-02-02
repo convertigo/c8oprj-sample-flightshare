@@ -254,7 +254,7 @@ title: Synchronisation données
           ↓DoDataSync [ngx.components.UIDynamicAction-1514564137480]: 
             beanData: '{"ionBean":"FullSyncSyncAction","requestable":"plain:FlightShare.flightshare_fullsync"}'
             ↓RootPage [ngx.components.UIDynamicAction-1514564137526]: 
-              beanData: '{"ionBean":"RootPageAction","page":"plain:FlightShare.MobileApplication.Application.MyFlights"}'
+              beanData: '{"ionBean":"RootPageAction","page":"plain:FlightShare.MobileApplication.Application.Page"}'
       ↓IfRemoteDatabaseisNotFilled [ngx.components.UIDynamicAction-1514564025208]: 
         beanData: '{"ionBean":"IfAction","condition":"source:{\"filter\":\"Sequence\",\"project\":\"FlightShare\",\"input\":\"listen([''FlightShare.CheckRemoteInit#checkdoc''])?.transaction?.document?.couchdb_output?._id != \\\"LFAG\\\"\"}"}'
         ↓Log [ngx.components.UIDynamicAction-1514564071502]: 
@@ -272,4 +272,4 @@ title: Synchronisation données
             ↓DoDataSync [ngx.components.UIDynamicAction-1514564189870]: 
               beanData: '{"ionBean":"FullSyncSyncAction","requestable":"plain:FlightShare.flightshare_fullsync"}'
               ↓RootPage [ngx.components.UIDynamicAction-1514564189918]: 
-                beanData: '{"ionBean":"RootPageAction","page":"plain:FlightShare.MobileApplication.Application.MyFlights"}'
+                beanData: '{"ionBean":"RootPageAction","page":"plain:FlightShare.MobileApplication.Application.Page"}'

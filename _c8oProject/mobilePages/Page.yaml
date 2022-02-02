@@ -1,6 +1,5 @@
 comment: My First Page as root page
 icon: plane
-isEnabled: false
 preloadPriority: high
 scriptContent: 
   - xmlizable: 

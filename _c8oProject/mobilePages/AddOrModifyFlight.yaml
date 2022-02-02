@@ -63,6 +63,7 @@ title: Title for AddFlight
              "ControlName": "plain:from",
              "Debounce": "plain:0",
              "Placeholder": "plain:Selectionnez dans la liste...",
+             "Readonly": "plain:true",
              "Value": "script:routerProvider.sharedObject[''selectedAirports'']?.FROM"
             }'
           comment: routerProvider.sharedObject['selectedAirports']?.FROM
@@ -93,6 +94,7 @@ title: Title for AddFlight
              "ControlName": "plain:to",
              "Debounce": "plain:0",
              "Placeholder": "plain:Selectionnez dans la liste...",
+             "Readonly": "plain:true",
              "Value": "script:routerProvider.sharedObject[''selectedAirports'']?.TO"
             }'
           tagName: ion-input
@@ -149,36 +151,35 @@ title: Title for AddFlight
               textValue: 
                 - xmlizable: 
                   - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                  - MobileSmartSourceType: plain:Places occupées (pilotes et passagers)
-          ↓Range [ngx.components.UIDynamicElement-1511764058444]: 
-            beanData: |
-              '{
-               "ionBean": "Range",
-               "ControlName": "plain:occupiedSeats",
-               "Min": "script:0",
-               "Max": "script:router.sharedObject[''selectedPlane''].seats",
-               "Pin": "plain:true",
-               "Snaps": "plain:true",
-               "Step": "plain:",
-               "Value": "source:{\"filter\":\"Database\",\"project\":\"FlightShare\",\"input\":\"listen([''fs:\\\/\\\/flightshare_fullsync.view#MODIFYFLIGHT, {ddoc=''Design_document'', view=''Flights''}'']).rows ? listen([''fs:\\\/\\\/flightshare_fullsync.view#MODIFYFLIGHT, {ddoc=''Design_document'', view=''Flights''}''])?.rows[0]?.doc?.flight?.occupiedSeats : ''''\"}"
-              }'
-            tagName: ion-range
-            ↓Label [ngx.components.UIDynamicElement-1511764252275]: 
-              beanData: '{"ionBean":"Label"}'
-              tagName: ion-label
-              ↓Text [ngx.components.UIText-1511764266891]: 
-                textValue: 
-                  - xmlizable: 
-                    - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                    - MobileSmartSourceType: plain:0
-            ↓Label1 [ngx.components.UIDynamicElement-1511764256368]: 
-              beanData: '{"ionBean":"Label"}'
-              tagName: ion-label
-              ↓Text [ngx.components.UIText-1511764274939]: 
-                textValue: 
-                  - xmlizable: 
-                    - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                    - MobileSmartSourceType: script:router.sharedObject['selectedPlane']?.seats
+                  - MobileSmartSourceType: 'source:{"filter":"Form","project":"FlightShare","input":"","model":{"data":[{"priority":1508950872306,"identifier":"form1508950872306"}],"path":"?.controls[''occupiedSeats'']?.value","prefix":"''Places occupées (pilotes et passagers): '' +","suffix":"","custom":"","useCustom":false}}'
+            ↓Range [ngx.components.UIDynamicElement-1511764058444]: 
+              beanData: |
+                '{
+                 "ionBean": "Range",
+                 "ControlName": "plain:occupiedSeats",
+                 "Min": "script:0",
+                 "Max": "script:router.sharedObject[''selectedPlane''].seats",
+                 "Pin": "plain:true",
+                 "Snaps": "plain:true",
+                 "Value": "source:{\"filter\":\"Database\",\"project\":\"FlightShare\",\"input\":\"listen([''fs:\\\/\\\/flightshare_fullsync.view#MODIFYFLIGHT, {ddoc=''Design_document'', view=''Flights''}'']).rows ? listen([''fs:\\\/\\\/flightshare_fullsync.view#MODIFYFLIGHT, {ddoc=''Design_document'', view=''Flights''}''])?.rows[0]?.doc?.flight?.occupiedSeats : ''''\",\"model\":{\"data\":[],\"path\":\"\",\"prefix\":\"\",\"suffix\":\" : ''''\",\"custom\":\"listen([''fs:\\\/\\\/flightshare_fullsync.view#MODIFYFLIGHT'']).rows ? listen([''fs:\\\/\\\/flightshare_fullsync.view#MODIFYFLIGHT''])?.rows[0]?.doc?.flight?.occupiedSeats : ''1''\",\"useCustom\":true}}"
+                }'
+              tagName: ion-range
+              ↓Label [ngx.components.UIDynamicElement-1511764252275]: 
+                beanData: '{"ionBean":"Label"}'
+                tagName: ion-label
+                ↓Text [ngx.components.UIText-1511764266891]: 
+                  textValue: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                      - MobileSmartSourceType: plain:0
+              ↓Label1 [ngx.components.UIDynamicElement-1511764256368]: 
+                beanData: '{"ionBean":"Label"}'
+                tagName: ion-label
+                ↓Text [ngx.components.UIText-1511764274939]: 
+                  textValue: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                      - MobileSmartSourceType: script:router.sharedObject['selectedPlane']?.seats
       ↓ListItem1 [ngx.components.UIDynamicElement-1509076453468]: 
         beanData: '{"ionBean":"ListItem"}'
         tagName: ion-item
