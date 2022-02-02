@@ -1,20 +1,25 @@
 ↑default: true
 databaseName: flightshare_fullsync
 ↓CheckDocument [transactions.couchdb.GetDocumentTransaction]: 
+  accessibility: Public
   ↓_use_docid [variables.RequestableVariable-1514563638162]: 
     description: Document ID
     value: LFAG
 ↓DeleteDocument [transactions.couchdb.DeleteDocumentTransaction]: 
+  accessibility: Public
   ↓_use_docid [variables.RequestableVariable-1509571721624]: 
     description: Document ID
 ↓GetDocument [transactions.couchdb.GetDocumentTransaction]: 
+  accessibility: Public
   ↓_use_docid [variables.RequestableVariable-1509571287802]: 
     description: Document ID
   ↓_use_conflicts [variables.RequestableVariable-1509571287804]: 
     description: (boolean) – Includes information about conflicts in document. Default is false
 ↓GetServerInfo [transactions.couchdb.GetServerInfoTransaction]: 
   ↑default: true
+  accessibility: Public
 ↓GetView [transactions.couchdb.GetViewTransaction]: 
+  accessibility: Public
   ↓_use_ddoc [variables.RequestableVariable-1508921220580]: 
     description: Design document name
     value: Design_document
@@ -28,28 +33,33 @@ databaseName: flightshare_fullsync
     description: (string) – Stop returning records when the specified key is reached. Optional
     value: LFPN
 ↓PostAnonymousDoc [transactions.couchdb.CustomTransaction]: 
+  accessibility: Public
   httpData: context.requestedObject.getJsonBody(new org.codehaus.jettison.json.JSONObject())
   httpVerb: POST
   ↓doc [variables.RequestableVariable-1508943115601]: 
 ↓PostBulkDocuments [transactions.couchdb.PostBulkDocumentsTransaction]: 
+  accessibility: Public
   policy: override
   ↓_id [variables.RequestableMultiValuedVariable-1508872379766]: 
     description: Document ids
   ↓data [variables.RequestableMultiValuedVariable-1508872379768]: 
     description: Documents contents
 ↓PostDocument [transactions.couchdb.PostDocumentTransaction]: 
+  accessibility: Public
   policy: override
   ↓_id [variables.RequestableVariable-1508935527257]: 
     description: Document id
   ↓data [variables.RequestableVariable-1508935527259]: 
     description: Document content
 ↓PostMergeDocument [transactions.couchdb.PostDocumentTransaction]: 
+  accessibility: Public
   policy: merge
   ↓_id [variables.RequestableVariable-1509633996953]: 
     description: Document id
   ↓_use_json_base [variables.RequestableVariable-1509633996955]: 
     description: (string) – JSON use as a base for the document (js object). Optional
 ↓ResetDatabase [transactions.couchdb.ResetDatabaseTransaction]: 
+  accessibility: Public
 ↓Design_document [couchdb.DesignDocument]: 
   docdata: 
     →: |
