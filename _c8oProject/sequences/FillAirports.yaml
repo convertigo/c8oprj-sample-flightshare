@@ -11,7 +11,7 @@
           - java.lang.String: 
             - ↑value: 1508908088197
           - java.lang.String: 
-            - ↑value: ./document/line
+            - ↑value: ./line
     ↓jSimpleSource [steps.SimpleSourceStep-1509517445674]: 
       sourceDefinition: 
         - xmlizable: 

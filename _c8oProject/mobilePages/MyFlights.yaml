@@ -1,4 +1,21 @@
 inAutoMenu: false
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        '/*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	public localeDate(date: string) {
+        		return new Date(date).toLocaleString();
+        	}
+        	/*End_c8o_PageFunction*/
+        '
 segment: MyFlights
 title: Mes vols
 ↓Header [ngx.components.UIDynamicElement-1508938649849]: 
@@ -93,7 +110,7 @@ title: Mes vols
                   textValue: 
                     - xmlizable: 
                       - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                      - MobileSmartSourceType: source:{"filter":"Iteration","project":"FlightShare","input":"item1509123535617?.doc.flight.date"}
+                      - MobileSmartSourceType: source:{"filter":"Iteration","project":"FlightShare","input":"item1509123535617?.doc.flight.date","model":{"data":[{"priority":1509123535617}],"path":"","prefix":"localeDate(","suffix":".doc.flight.date)","custom":"","useCustom":false}}
               ↓Heading5 [ngx.components.UIDynamicElement-1508946957755]: 
                 beanData: '{"ionBean":"Heading5"}'
                 tagName: h5

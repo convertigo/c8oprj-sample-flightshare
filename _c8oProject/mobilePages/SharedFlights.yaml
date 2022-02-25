@@ -1,4 +1,21 @@
 inAutoMenu: false
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        '/*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	public localeDate(date: string) {
+        		return new Date(date).toLocaleString();
+        	}
+        	/*End_c8o_PageFunction*/
+        '
 segment: SharedFlights
 title: Vols partagés
 ↓Header [ngx.components.UIDynamicElement-1508945977194]: 
@@ -84,7 +101,7 @@ title: Vols partagés
                 textValue: 
                   - xmlizable: 
                     - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                    - MobileSmartSourceType: source:{"filter":"Iteration","project":"FlightShare","input":"item1509573021875?.doc?.PublishedFlight?.date"}
+                    - MobileSmartSourceType: source:{"filter":"Iteration","project":"FlightShare","input":"item1509573021875?.doc?.PublishedFlight?.date","model":{"data":[{"priority":1509573021875}],"path":"","prefix":"localeDate(","suffix":".doc.PublishedFlight.date)","custom":"","useCustom":false}}
             ↓Heading5 [ngx.components.UIDynamicElement-1509573147652]: 
               beanData: '{"ionBean":"Heading5"}'
               tagName: h5

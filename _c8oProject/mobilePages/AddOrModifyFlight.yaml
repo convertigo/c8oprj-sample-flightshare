@@ -190,37 +190,16 @@ title: Title for AddFlight
             textValue: 
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                - MobileSmartSourceType: plain:Date :
-        ↓DateTime [ngx.components.UIDynamicElement-1509076486816]: 
+                - MobileSmartSourceType: plain:Date - Heure :
+      ↓ListItem4 [ngx.components.UIDynamicElement-1645801761204]: 
+        beanData: '{"ionBean":"ListItem"}'
+        tagName: ion-item
+        ↓DateTime [ngx.components.UIDynamicElement-1645801761213]: 
           beanData: |
             '{
              "ionBean": "DateTime",
              "ControlName": "plain:date",
-             "DisplayFormat": "plain:DDDD D MMM YYYY",
-             "DayNames": "plain:Dimanche, Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi",
-             "Placeholder": "plain:Date du vol",
              "Value": "source:{\"filter\":\"Database\",\"project\":\"FlightShare\",\"input\":\"listen([''fs:\\\/\\\/flightshare_fullsync.view#MODIFYFLIGHT, {ddoc=''Design_document'', view=''Flights''}'']).rows ? listen([''fs:\\\/\\\/flightshare_fullsync.view#MODIFYFLIGHT, {ddoc=''Design_document'', view=''Flights''}'']).rows[0]?.doc?.flight?.date : ''''\"}"
-            }'
-          tagName: ion-datetime
-      ↓ListItem111 [ngx.components.UIDynamicElement-1509118067548]: 
-        beanData: '{"ionBean":"ListItem"}'
-        tagName: ion-item
-        ↓Label [ngx.components.UIDynamicElement-1509118067592]: 
-          beanData: '{"ionBean":"Label"}'
-          tagName: ion-label
-          ↓Text [ngx.components.UIText-1509118067615]: 
-            textValue: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                - MobileSmartSourceType: plain:Heure :
-        ↓DateTime [ngx.components.UIDynamicElement-1509118067635]: 
-          beanData: |
-            '{
-             "ionBean": "DateTime",
-             "ControlName": "plain:time",
-             "DisplayFormat": "plain:HH:mm",
-             "Placeholder": "plain:Heure du vol",
-             "Value": "source:{\"filter\":\"Database\",\"project\":\"FlightShare\",\"input\":\"listen([''fs:\\\/\\\/flightshare_fullsync.view#MODIFYFLIGHT, {ddoc=''Design_document'', view=''Flights''}'']).rows ? listen([''fs:\\\/\\\/flightshare_fullsync.view#MODIFYFLIGHT, {ddoc=''Design_document'', view=''Flights''}''])?.rows[0]?.doc?.flight?.time : ''''\"}"
             }'
           tagName: ion-datetime
       ↓ListItem11 [ngx.components.UIDynamicElement-1509076547715]: 

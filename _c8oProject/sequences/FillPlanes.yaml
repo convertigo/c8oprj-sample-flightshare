@@ -11,7 +11,7 @@
           - java.lang.String: 
             - ↑value: 1508933214469
           - java.lang.String: 
-            - ↑value: ./document/line
+            - ↑value: ./line
     ↓Complex [steps.XMLComplexStep-1508933214482]: 
       nodeName: plane
       ↓Element [steps.XMLElementStep-1508933214487]: 

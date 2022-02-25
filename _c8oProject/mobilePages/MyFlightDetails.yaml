@@ -1,4 +1,21 @@
 inAutoMenu: false
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        '/*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	public localeDate(date: string) {
+        		return new Date(date).toLocaleString();
+        	}
+        	/*End_c8o_PageFunction*/
+        '
 segment: MyFlightDetails
 title: Title for MyFlightDetails
 ↓Header [ngx.components.UIDynamicElement-1508947481985]: 
@@ -157,7 +174,7 @@ title: Title for MyFlightDetails
                     textValue: 
                       - xmlizable: 
                         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                        - MobileSmartSourceType: plain:Date :
+                        - MobileSmartSourceType: plain:Date - Heure :
               ↓GridCol1 [ngx.components.UIDynamicElement-1508949524852]: 
                 beanData: '{"ionBean":"GridCol"}'
                 tagName: ion-col
@@ -168,37 +185,7 @@ title: Title for MyFlightDetails
                     textValue: 
                       - xmlizable: 
                         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                        - MobileSmartSourceType: source:{"filter":"Database","project":"FlightShare","input":"listen(['fs:\/\/flightshare_fullsync.view#SHOWFLIGHT, {ddoc='Design_document', view='Flights', include_docs='true'}'])?.rows[0]?.doc?.flight?.date"}
-            ↓GridRow111 [ngx.components.UIDynamicElement-1508948754651]: 
-              beanData: '{"ionBean":"GridRow"}'
-              tagName: ion-row
-              ↓GridCol [ngx.components.UIDynamicElement-1508948754677]: 
-                beanData: '{"ionBean":"GridCol"}'
-                tagName: ion-col
-                ↓Heading2 [ngx.components.UIDynamicElement-1508948754696]: 
-                  beanData: '{"ionBean":"Heading2"}'
-                  tagName: h2
-                  ↓Text [ngx.components.UIText-1508948754713]: 
-                    textValue: 
-                      - xmlizable: 
-                        - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                        - MobileSmartSourceType: plain:Heure :
-              ↓GridCol1 [ngx.components.UIDynamicElement-1508949560304]: 
-                beanData: '{"ionBean":"GridCol"}'
-                tagName: ion-col
-                ↓Heading2 [ngx.components.UIDynamicElement-1508949560340]: 
-                  beanData: '{"ionBean":"Heading2"}'
-                  tagName: h2
-                  ↓Text11 [ngx.components.UIText-1509556934866]: 
-                    textValue: 
-                      - xmlizable: 
-                        - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                        - MobileSmartSourceType: source:{"filter":"Database","project":"FlightShare","input":"listen(['fs:\/\/flightshare_fullsync.view#SHOWFLIGHT, {ddoc='Design_document', view='Flights', include_docs='true'}'])?.rows[0]?.doc?.flight?.time"}
-                  ↓Text1 [ngx.components.UIText-1508949560391]: 
-                    textValue: 
-                      - xmlizable: 
-                        - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-                        - MobileSmartSourceType: 'plain: Local'
+                        - MobileSmartSourceType: source:{"filter":"Database","project":"FlightShare","input":"listen(['fs:\/\/flightshare_fullsync.view#SHOWFLIGHT, {ddoc='Design_document', view='Flights', include_docs='true'}'])?.rows[0]?.doc?.flight?.date","model":{"data":[{"includeDocs":true,"connector":"FlightShare.flightshare_fullsync","document":"FlightShare.flightshare_fullsync.Design_document","queryview":"Flights","verb":"view","marker":"SHOWFLIGHT"}],"path":"?.rows","prefix":"localeDate(","suffix":"[0].doc.flight.date)","custom":"","useCustom":false}}
             ↓GridRow1112 [ngx.components.UIDynamicElement-1511807842217]: 
               beanData: '{"ionBean":"GridRow"}'
               tagName: ion-row
