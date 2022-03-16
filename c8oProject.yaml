@@ -21,7 +21,7 @@
     projectName: lib_FullSyncGrp=https://github.com/convertigo/c8oprj-lib-fullsync-grp.git:branch=7.9.0:autoPull=true
   ↓Project_reference1 [references.ProjectSchemaReference]: 
     projectName: mobilebuilder_tpl_8_0_0_ngx=https://github.com/convertigo/c8oprj-mobilebuilder-tpl/archive/mobilebuilder_tpl_8_0_0_ngx.zip
-  ↓MobileApplication [core.MobileApplication]: 
+  ↓Application [core.MobileApplication]: 
     applicationDescription: Flying Club flight sharing application
     applicationId: com.convertigo.flightshare
     applicationName: Flight Share
@@ -31,4 +31,4 @@
       comment: Android 4.4 to 6 for Smartphones and Tablets
     ↓iOS [mobileplatforms.IOs]: 
       comment: iOS 7, 8, 9 for iPhone and iPad
-    ↓Application [ngx.components.ApplicationComponent]: 🗏 mobileApplication.yaml
+    ↓NgxApp [ngx.components.ApplicationComponent]: 🗏 mobileApplication.yaml
