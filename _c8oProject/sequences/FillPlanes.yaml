@@ -1,5 +1,6 @@
 ↓Read_CSV [steps.ReadCSVStep-1508933214469]: 
   dataFile: '".//data/planes.csv"'
+  separator: ;
   titleLine: true
 ↓Complex [steps.XMLComplexStep-1508933214473]: 
   nodeName: planes

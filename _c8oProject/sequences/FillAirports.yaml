@@ -1,5 +1,6 @@
 ↓Read_CSV [steps.ReadCSVStep-1508908088197]: 
   dataFile: '".//data/global_airports.csv"'
+  separator: ;
   titleLine: true
 ↓Complex [steps.XMLComplexStep-1508908353706]: 
   nodeName: airports

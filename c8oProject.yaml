@@ -31,4 +31,4 @@
       comment: Android 4.4 to 6 for Smartphones and Tablets
     ↓iOS [mobileplatforms.IOs]: 
       comment: iOS 7, 8, 9 for iPhone and iPad
-    ↓NgxApp [ngx.components.ApplicationComponent]: 🗏 mobileApplication.yaml
+    ↓NgxApp [ngx.components.ApplicationComponent]: 🗏 mobileNgxApp.yaml
