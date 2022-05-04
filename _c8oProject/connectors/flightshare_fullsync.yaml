@@ -39,6 +39,7 @@ databaseName: flightshare_fullsync
   ↓doc [variables.RequestableVariable-1508943115601]: 
 ↓PostBulkDocuments [transactions.couchdb.PostBulkDocumentsTransaction]: 
   accessibility: Public
+  fullSyncAclPolicy: anonymous
   policy: override
   ↓_id [variables.RequestableMultiValuedVariable-1508872379766]: 
     description: Document ids
